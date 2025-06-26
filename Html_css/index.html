@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    main {
+      background-color: white;
+      border-radius: 16px;
+      padding: 24px;
+      height: 100%
+      width: 100%;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    main:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 3px solid #333;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 12px 0 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #333;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    @media (max-width: 500px) {
+      main {
+        margin: 0 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="https://avatars.githubusercontent.com/u/134695991?v=4" alt="Profile image of Aaryan" />
+    <h1>Aaryan Tak</h1>
+    <p>Web Developer | MERN Stack | Lifelong Learner</p>
+    <nav>
+      <a href="https://github.com/Brown-Sage" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/aryan-tak-508642298/" target="_blank">LinkedIn</a>
+    </nav>
+  </main>
+</body>
+</html>
